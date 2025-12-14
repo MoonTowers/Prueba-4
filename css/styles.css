@@ -1,0 +1,287 @@
+/* RESETEO GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONDO GENERAL DEL SITIO*/
+body{
+    background-color: wheat;
+    padding-top: 60px;
+}
+
+/* ESPACIO PARA EVITAR QUE EL HEADER FIJO TAPE EL CONTENIDO */
+main{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* --------------------INICIO BARRA SUPERIOR --------------------- */
+/* TITULO DE LA BARRA ROJA HORIZONTAL */
+.titulo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+/* CONTIENE EL ICONO DE MENU Y EL TITULO */
+.top-bar {
+    width: 100%;
+    height: 60px;
+    background-color: #b71c1c;
+    display: flex;
+    align-items:center;
+    gap: 50px;
+    padding: 0 20px;
+    position: fixed;  /* siempre visible */
+    top: 0;
+    left: 0;
+    z-index: 2000; /* por encima del menú lateral */
+}
+
+/* Área del logo 
+.logo-area {
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff20;
+    border-radius: 8px;
+}
+*/
+
+/* EFECTO DEL BOTON MENU AL PASAR EL CURSOR */
+.icon-menu:hover{
+    transform: scale(1.1);
+}
+
+/* ICONO DEL MENU */
+.icon-menu img {
+    width: 42px;
+    cursor: pointer;
+}
+/* --------------------FIN BARRA SUPERIOR --------------------- */
+
+
+/* --------------------INICIO BARRA LATERAL --------------------- */
+
+/* Botón menú 
+.container .btn-menu {
+    float: left;
+    line-height: 70px;
+}
+*/
+
+/* CHECKBOX INVISIBLE QUE CONTROLA LA BARRA LATERAL */
+#btn-menu{
+    display: none;
+}
+
+/* FONDO OSCURECIDO CUANDO SE ABRE LA BARRA LATERAL */
+.container-menu {
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: calc(100vh - 60px);
+    top: 60px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+/* MOSTRAR EL FONDO OSCURO CUANDO SE ACTIVA */
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* PANEL ROJO LATERAL */
+.cont-menu {
+    width: 250px;
+    background: #d32f2f;
+    height: calc(100vh - 60px);
+    position: absolute;
+    left: -250px;
+    top: 0;
+    transition: left 0.3s ease;
+}
+
+/* MOSTRAR EL PANEL */
+#btn-menu:checked ~ .container-menu .cont-menu {
+    left: 0;
+}
+
+/* ENLACES*/
+.cont-menu nav{
+    transform: translateY(15%);
+    transition: all 0.4 ease;
+}
+
+/* FORMATO DE ENLACES BARRA LATERAL*/
+.cont-menu nav a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    border-left: 5px solid transparent;
+    transition: background-color 600ms ease-in-out,
+                border-left 600ms ease-in-out,
+                color 600ms ease-in-out;
+}
+
+/* HOVER CON DIFERENTE COLOR */
+.cont-menu nav a:hover{
+    border-left: 5px solid black;
+    background-color: #B00710; /* rojo suave */
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* BOTON CERRAR MENU (X) */
+.close-menu img {
+    width: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+/* --------------------FIN BARRA LATERAL --------------------- */
+
+
+/* --------------------INICIO ENCABEZADO PRINCIPAL --------------------- */
+.encabezado h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* --------------------FIN ENCABEZADO PRINCIPAL --------------------- */
+
+
+/* --------------------INICIO GALERIA DE IMAGENES --------------------- */
+.galeria {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;          /* Centra verticalmente (si queda espacio) */
+    gap: 20px;                    /* Separación entre imágenes */
+    padding: 20px;
+}
+
+/* CONTENEDOR DE CADA IMAGEN */
+.galeria img {
+    width: 350px;                 /* Tamaño uniforme */
+    height: 250px;
+    max-width: 80%;
+    display: block;            /* Recorta sin deformar */
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+/* EFECTO ZOOM AL PASAR EL CURSOR */
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+.galeria a{
+    text-decoration: none;
+}
+
+/* TEXTO DEBAJO DE LA IMAGEN */
+.galeria a p{
+    margin-top: 8px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+/* --------------------FIN GALERIA DE IMAGENES --------------------- */
+
+
+/* --------------------INICIO LIGHTBOX --------------------- */
+.lightbox {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* CUANDO LA IMAGEN ESTA ACTIVA */
+.lightbox:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 3000;
+}
+
+/* IMAGEN AMPLIADA */
+.lightbox img {
+    max-width: 700px;
+    max-height: 550px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+/* BOTON CERRAR */
+.lightbox a {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+/* TEXTO DEBAJO DE LA IMAGEN AMPLIADA */
+.lightbox p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.3;
+    max-width: 90%;
+}
+/* --------------------FIN LIGHTBOX --------------------- */
+
+/* --------------------INICIO PORTADA PRINCIPAL --------------------- */
+/* PORTADA GRANDE Y CENTRADA */
+.portada {
+    display: flex;
+    flex-direction: column; /* imagen arriba, texto abajo */
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 20px; /* pequeño margen lateral para pantallas pequeñas */
+}
+
+/* FORMATO DE IMAGEN */
+.portada img {
+    width: 95%;        /* más grande que antes */
+    max-width: 500px; /* evita que se haga demasiado enorme en pantallas gigantes */
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.28);
+
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+/* TEXTO DEBAJO DE LA IMAGEN */
+.portada-texto {
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    max-width: 900px;
+}
+
+/* HOVER AL PASAR EL CURSOR */
+.portada img:hover {
+    transform: scale(1.02);
+}

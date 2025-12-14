@@ -1,0 +1,26 @@
+{
+    "titulo": "Soldado",
+    "imagenes": [
+        {
+            "src": "img/soldado/cangrejo1.jpg",
+            "texto": "Imagen #1"
+        },
+        {
+            "src": "img/soldado/cangrejo2.webp",
+            "texto": "Imagen #2"
+        },
+        {
+            "src": "img/soldado/cangrejo3.webp",
+            "texto": "Imagen #3"
+        },
+        {
+            "src": "img/soldado/cangrejo1.jpg",
+            "texto": "Imagen #4"
+        },
+        {
+            "src": "img/soldado/cangrejo2.webp",
+            "texto": "Imagen #5"
+        }
+
+    ]
+}

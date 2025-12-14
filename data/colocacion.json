@@ -1,0 +1,26 @@
+{
+    "titulo": "Colocación",
+    "imagenes": [
+        {
+            "src": "img/colocacion/esponja1.jpg",
+            "texto": "Imagen #1"
+        },
+        {
+            "src": "img/colocacion/esponja2.jpg",
+            "texto": "Imagen #2"
+        },
+        {
+            "src": "img/colocacion/esponja3.png",
+            "texto": "Imagen #3"
+        },
+        {
+            "src": "img/colocacion/esponja1.jpg",
+            "texto": "Imagen #4"
+        },
+        {
+            "src": "img/colocacion/esponja2.jpg",
+            "texto": "Imagen #5"
+        }
+
+    ]
+}

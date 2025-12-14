@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITULO QUE APARECE EN LA PESTAÑA DEL NAVEGADOR -->
+    <title>Ayudas visuales</title>
+
+    <!-- ARCHIVOS DE ESTILO CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- ICONO EN LA PESTAÑA DEL NAVEGADOR -->
+    <link rel="icon" href="img/icon-menu.svg">
+</head>
+<body>
+
+<!-- BARRA SUPERIOR FIJA (TOP BAR)-->
+<!-- CONTIENE EL BOTON DEL MENU LATERAL Y EL TITULO DE AL LADO-->
+    <header class="top-bar">
+        <!-- ÍCONO DEL MENU LATERAL (ABRIR/CERRAR EL PANEL) -->
+        <label for="btn-menu" class="icon-menu">
+            <img src="img/icon-menu.svg" alt="menu">
+        </label>
+
+        <!-- TITULO EN LA BARRA SUPERIOR AL LADO DEL ICONO -->
+        <span class="titulo">Ayudas visuales - Trafo</span>
+    </header>
+
+<!-- CHECKBOX OCULTO QUE ACTIVA Y DESACTIVA EL MENU LATERAL -->
+    <input type="checkbox" id="btn-menu">
+
+<!-- FONDO QUE SE OSCURECE AL ABRIR EL MENU -->
+    <div class="container-menu">
+
+        <!-- PANEL LATERAL ROJO -->
+        <div class="cont-menu">
+
+        <!-- CONTIENE LAS OPCIONES DENTRO DE LA BARRA LATERAL -->  
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="producto.html?id=bobinado">Bobinado</a>
+                <a href="producto.html?id=colocacion">Colocación</a>
+                <a href="producto.html?id=amarre">Amarre</a>
+                <a href="producto.html?id=pegado">Pegado</a>
+                <a href="producto.html?id=laser">Láser</a>
+                <a href="producto.html?id=soldado">Soldado</a>
+                <a href="producto.html?id=inspeccion">Inspección</a>
+                <a href="producto.html?id=general">General</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+
+<!-- CONTENIDO DE LA PAGINA PRINCIPAL (PORTADA)-->
+<!-- CONTIENE LA IMAGEN DE PORTADA Y EL PARRAFO DEBAJO DE ELLA-->
+    <main>
+        <!-- CONTENEDOR DE LA IMAGEN DE PORTADA Y TEXTO DEBAJO -->
+        <section class="portada">
+            <img src="img/portada.webp" alt="Imagen de portada">
+            <p class="portada-texto">
+                Bienvenido al catálogo de ayudas visuales.
+                Selecciona un producto desde el menú para comenzar.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>

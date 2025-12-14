@@ -1,0 +1,26 @@
+{
+    "titulo": "Inspección",
+    "imagenes": [
+        {
+            "src": "img/inspeccion/inspeccion1.jpg",
+            "texto": "Imagen #1"
+        },
+        {
+            "src": "img/inspeccion/inspeccion2.jpg",
+            "texto": "Imagen #2"
+        },
+        {
+            "src": "img/inspeccion/inspeccion3.jpg",
+            "texto": "Imagen #3"
+        },
+        {
+            "src": "img/inspeccion/inspeccion2.jpg",
+            "texto": "Imagen #4"
+        },
+        {
+            "src": "img/inspeccion/inspeccion3.jpg",
+            "texto": "Imagen #5"
+        }
+
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "titulo": "Amarre",
+    "imagenes": [
+        {
+            "src": "img/amarre/coraje1.jpg",
+            "texto": "Imagen #1"
+        },
+        {
+            "src": "img/amarre/coraje2.jpg",
+            "texto": "Imagen #2"
+        },
+        {
+            "src": "img/amarre/coraje3.jpg",
+            "texto": "Imagen #3"
+        },
+        {
+            "src": "img/amarre/coraje2.jpg",
+            "texto": "Imagen #4"
+        },
+        {
+            "src": "img/amarre/coraje1.jpg",
+            "texto": "Imagen #5"
+        }
+
+    ]
+}

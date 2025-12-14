@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITULO QUE APARECE EN LA PESTAÑA DEL NAVEGADOR -->
+     <title>Ayudas visuales</title>
+
+    <!-- ARCHIVOS DE ESTILO CSS -->
+     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- ICONO EN LA PESTAÑA DEL NAVEGADOR -->
+    <link rel="icon" href="img/icon-menu.svg">
+</head>
+<body>
+
+<!-- BARRA SUPERIOR FIJA (TOP BAR)-->
+<!-- CONTIENE EL BOTON DEL MENU LATERAL Y EL TITULO DE AL LADO-->
+    <header class="top-bar">
+
+    <!-- BOTON DEL MENU LATERAL (ABRE/CIERRA EL PANEL) -->
+        <label for="btn-menu" class="icon-menu">
+            <img src="img/icon-menu.svg" alt="menu">
+        </label>
+    
+    <!-- TITULO EN LA BARRA SUPERIOR AL LADO DEL ICONO -->    
+        <span class="titulo">Ayudas visuales</span>
+    </header>
+
+<!-- CHECKBOX OCULTO QUE ACTIVA Y DESACTIVA EL MENU LATERAL -->
+    <input type="checkbox" id="btn-menu">
+
+<!-- MENÚ LATERAL ROJO-->
+<!-- Panel desplegable con enlaces a cada producto-->
+    <div class="container-menu">
+        <div class="cont-menu">
+            
+            <!-- NAVEGACION ENTRE PAGINAS -->
+            <!-- HREF CONTIENE EL NOMBRE DEL ARCHIVO JSON -->
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="producto.html?id=bobinado">Bobinado</a>
+                <a href="producto.html?id=colocacion">Colocación</a>
+                <a href="producto.html?id=amarre">Amarre</a>
+                <a href="producto.html?id=pegado">Pegado</a>
+                <a href="producto.html?id=laser">Láser</a>
+                <a href="producto.html?id=soldado">Soldado</a>
+                <a href="producto.html?id=inspeccion">Inspección</a>
+                <a href="producto.html?id=general">General</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CONTENIDO DEL TITULO, IMAGENES Y LIGHTBOX -->
+    <main>
+
+        <!-- TITULO DEL PRODUCTO -->
+        <div class="encabezado">
+            <h1 id="titulo-producto"></h1>
+        </div>
+
+        <!-- GALERIA DE IMAGENES -->
+        <div class="galeria" id="galeria"></div>
+
+        <!-- LIGHTBOX -->
+        <!-- APARECE AL HACER CLICK EN UNA IMAGEN; SE OCULTA AL CERRAR-->
+        <div id="lightbox-container"></div>
+
+    </main>
+
+    <!-- ARCHIVO JS-->
+    <script src="js/galeria.js"></script>
+
+</body>
+</html>

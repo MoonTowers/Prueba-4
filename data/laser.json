@@ -1,0 +1,22 @@
+{
+    "titulo": "Láser",
+    "imagenes": [
+        {
+            "src": "img/laser/calamardo1.jpg",
+            "texto": "Imagen #1"
+        },
+        {
+            "src": "img/laser/calamardo2.jpg",
+            "texto": "Imagen #1"
+        },
+        {
+            "src": "img/laser/calamardo3.jpg",
+            "texto": "Imagen #3"
+        },
+        {
+            "src": "img/laser/calamardo2.jpg",
+            "texto": "Imagen #4"
+        }
+
+    ]
+}

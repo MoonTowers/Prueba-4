@@ -1,0 +1,21 @@
+{
+    "titulo": "General",
+    "imagenes": [
+        {
+            "src": "img/general/general1.jpg",
+            "texto": "Imagen #1"
+        },
+        {
+            "src": "img/general/general2.png",
+            "texto": "Imagen #2"
+        },
+        {
+            "src": "img/general/general3.webp",
+            "texto": "Imagen #3"
+        },
+        {
+            "src": "img/general/general1.jpg",
+            "texto": "Imagen #4"
+        }
+    ]
+}

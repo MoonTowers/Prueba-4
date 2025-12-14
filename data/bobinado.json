@@ -1,0 +1,30 @@
+{
+    "titulo": "Bobinado",
+    "imagenes": [
+        {
+            "src": "img/bobinado/Ferrari1.webp",
+            "texto": "Imagen #1"
+        },
+        {
+            "src": "img/bobinado/Ferrari2.webp",
+            "texto": "Imagen #2"
+        },
+        {
+            "src": "img/bobinado/FerrariBlack.webp",
+            "texto": "Imagen #3"
+        },
+        {
+            "src": "img/bobinado/FerrariBlack.webp",
+            "texto": "Imagen #4"
+        },
+        {
+            "src": "img/bobinado/FerrariBlack.webp",
+            "texto": "Imagen #5"
+        },
+        {
+            "src": "img/bobinado/FerrariBlack.webp",
+            "texto": "Imagen #6"
+        }
+
+    ]
+}
