@@ -35,10 +35,10 @@ main{
     align-items:center;
     gap: 50px;
     padding: 0 20px;
-    position: fixed;  /* siempre visible */
+    position: fixed;  
     top: 0;
     left: 0;
-    z-index: 2000; /* por encima del menú lateral */
+    z-index: 2000; 
 }
 
 /* Área del logo 
@@ -134,7 +134,7 @@ main{
 /* HOVER CON DIFERENTE COLOR */
 .cont-menu nav a:hover{
     border-left: 5px solid black;
-    background-color: #B00710; /* rojo suave */
+    background-color: #B00710; 
     color: whitesmoke;
     font-weight: bold;
 }
@@ -161,18 +161,18 @@ main{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;      /* Centra horizontalmente */
-    align-items: center;          /* Centra verticalmente (si queda espacio) */
-    gap: 20px;                    /* Separación entre imágenes */
+    justify-content: center;      
+    align-items: center;          
+    gap: 20px;                    
     padding: 20px;
 }
 
 /* CONTENEDOR DE CADA IMAGEN */
 .galeria img {
-    width: 350px;                 /* Tamaño uniforme */
+    width: 350px;                 
     height: 250px;
     max-width: 80%;
-    display: block;            /* Recorta sin deformar */
+    display: block;            
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -251,17 +251,17 @@ main{
 /* PORTADA GRANDE Y CENTRADA */
 .portada {
     display: flex;
-    flex-direction: column; /* imagen arriba, texto abajo */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    padding: 0 20px; /* pequeño margen lateral para pantallas pequeñas */
+    padding: 0 20px; 
 }
 
 /* FORMATO DE IMAGEN */
 .portada img {
-    width: 95%;        /* más grande que antes */
-    max-width: 500px; /* evita que se haga demasiado enorme en pantallas gigantes */
+    width: 95%;        
+    max-width: 500px; 
     height: auto;
     border-radius: 12px;
     object-fit: cover;
@@ -284,4 +284,5 @@ main{
 /* HOVER AL PASAR EL CURSOR */
 .portada img:hover {
     transform: scale(1.02);
+
 }
